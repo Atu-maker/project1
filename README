@@ -1,39 +1,52 @@
-Please download the dataset, related models, and files from this link: 
-Link: https://pan.baidu.com/s/1QtaB3PhqJfW1lhz3HSlbAQ  
-Extract code: tttt 
 
-You need to download the following folder and model files from this link:
---eval
---train
---test_b
---result
---vgg_model
---Swingv2
--model2.pth
+1：If you want to reproduce it from training again:
 
-The final structure of the project is as follows::
+  Please download the dataset, related models, and files from this link: 
+  Link: https://pan.baidu.com/s/1QtaB3PhqJfW1lhz3HSlbAQ  
+  Extract code: tttt 
+  
+  You need to download the following folder and model files from this link:
+  --eval
+  --train
+  --test_b
+  --result
+  --vgg_model
+  --Swingv2
+  -model2.pth
+  
+  The final structure of the project is as follows::
+  
+  --eval
+    -hzImage
+    -lbImage
+  --train
+    -hzImage
+    -lbImage
+  --test_b
+  --result
+  --vgg_model
+  --Swingv2
+  --pytorch_msssim
+  --model2.pth
+  --Block.py
+  --model.py
+  --mymodel.py
+  --test.py
+  --train.py
+  
+  
+  #Running instructions: 
+  #If you want to retrain and reproduce, run the following command: 
+  Training Run: python train.py
+  Inference run: python test.py
 
---eval
-  -hzImage
-  -lbImage
---train
-  -hzImage
-  -lbImage
---test_b
---result
---vgg_model
---Swingv2
---pytorch_msssim
---model2.pth
---Block.py
---model.py
---mymodel.py
---test.py
---train.py
+2: If you just want to skip training and use our trained model for direct inference: 
 
-
-#Running instructions: 
-#If you want to retrain and reproduce, run the following command: 
-Training Run: python train.py 
-#If you want to directly use our trained model (model2. pth) to infer and reproduce the results: 
-Inference run: python test.py
+  You need to download the model from this link: 
+  Link: https://pan.baidu.com/s/1wyJ55K8VEnyoXZq9FvQL1Q  
+  Extract code: tttt 
+  After downloading, it is necessary to place the model weight file and test.py in the same level directory
+  Then place the test set data in the test-b folder
+  
+  #If you want to directly use our trained model (model2. pth) to infer and reproduce the results: 
+  Inference run: python test.py
