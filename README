@@ -42,11 +42,26 @@
 
 2: If you just want to skip training and use our trained model for direct inference: 
 
-  You need to download the model from this link: 
-  Link: https://pan.baidu.com/s/1wyJ55K8VEnyoXZq9FvQL1Q  
-  Extract code: tttt 
+  You need to download the model weight file (model2. pth) and Swingv2 folder from this link: 
+  Link：https://pan.baidu.com/s/1xx-gpNwcyeV-g3kGp6WhBA 
+  Extract code：tttt
   After downloading, it is necessary to place the model weight file and test.py in the same level directory
   Then place the test set data in the test-b folder
+
+  The structure is as follows:
+  --test_b
+  --result
+  --Swingv2
+  --pytorch_msssim
+  --model2.pth
+  --Block.py
+  --model.py
+  --mymodel.py
+  --test.py
+  --train.py
   
   #If you want to directly use our trained model (model2. pth) to infer and reproduce the results: 
   Inference run: python test.py
+
+  The final result will be generated in the result folder
+
